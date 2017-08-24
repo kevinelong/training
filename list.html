@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Title
+    </title>
+    <link rel="stylesheet" href="list.css">
+    <script src="list.js"></script>
+</head>
+<body>
+<h1>
+    Fruit
+</h1>
+<table id="fruit" cellspacing="1" cellpadding="1" border="1">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            Actions
+        </th>
+    </tr>
+    <tr class="template cool" style="color: green;">
+        <td class="field_name">
+        </td>
+        <td class="field_description">
+        </td>
+        <td class="actions">
+            <button onclick="alert(this.parentElement.parentElement.dataset.id);">
+                Edit...
+            </button>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

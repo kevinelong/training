@@ -1,0 +1,17 @@
+[
+  {
+    "id" : "123",
+    "name" : "Apple",
+    "description" : "Fruity"
+  },
+  {
+    "id" : "333",
+    "name" : "Pear",
+    "description" : "Pretty"
+  },
+  {
+    "id" : "456",
+    "name" : "Banana",
+    "description" : "Delicious"
+  }
+]
