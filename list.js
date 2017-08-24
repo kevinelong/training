@@ -4,7 +4,8 @@ function getData(){
     var request = new XMLHttpRequest();
 
     request.addEventListener("load", renderData);
-    request.open("GET", "list.json");
+    // request.open("GET", "list.json");
+    request.open("GET", "list.php");
     request.send();
 }
 
@@ -15,7 +16,6 @@ var viewFields = [
 ];
 
 function renderData(){
-    debugger;
 
     var data = JSON.parse(this.responseText);
     var length = data.length;
@@ -57,3 +57,7 @@ function renderData(){
 }
 
 document.addEventListener("DOMContentLoaded", getData);
+
+function edit(id){
+    self.location = "edit.html?id=" + id;
+}

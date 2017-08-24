@@ -12,7 +12,7 @@
 <h1>
     Fruit
 </h1>
-<table id="fruit" cellspacing="1" cellpadding="1" border="1">
+<table id="fruit" cellspacing="0" cellpadding="10" border="0">
     <tr>
         <th>
             Name
@@ -24,17 +24,21 @@
             Actions
         </th>
     </tr>
-    <tr class="template cool" style="color: green;">
+    <tr class="template cool" style="color: yellow;">
         <td class="field_name">
         </td>
         <td class="field_description">
         </td>
         <td class="actions">
-            <button onclick="alert(this.parentElement.parentElement.dataset.id);">
+
+            <button onclick="edit(this.parentElement.parentElement.dataset.id);">
                 Edit...
             </button>
         </td>
     </tr>
 </table>
+<button onclick="edit('');">
+    Add New...
+</button>
 </body>
 </html>

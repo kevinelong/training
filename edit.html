@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Title
+    </title>
+    <link rel="stylesheet" href="list.css">
+    <script src="edit.js"></script>
+</head>
+<body>
+<h1>
+    Add/Edit Fruit
+</h1>
+<form method="post" action="save.php">
+    <input type="hidden" name="id" id="field_id">
+    <table id="fruit" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input name="name" id="field_name">
+            </td>
+            <td>
+                <input name="description" id="field_description">
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Save">
+</form>
+<a href="list.html">Cancel</a>
+</body>
+</html>
